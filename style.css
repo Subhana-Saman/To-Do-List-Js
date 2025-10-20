@@ -1,0 +1,130 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #e9ebec;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  color: #333;
+}
+
+/* ========== HEADER ========== */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #222;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* ========== INPUT AREA ========== */
+#taskInput {
+  width: 280px;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+#taskInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* ========== ADD BUTTON ========== */
+button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ========== LIST ========== */
+ul {
+  list-style: none;
+  margin-top: 35px;
+  width: 100%;
+  max-width: 400px;
+  padding: 0;
+}
+
+/* ========== LIST ITEM ========== */
+li {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== DELETE BUTTON ========== */
+li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+li button:hover {
+  background-color: #b02a37;
+  transform: scale(1.1);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 480px) {
+  body {
+    padding-top: 40px;
+  }
+
+  #taskInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  ul {
+    max-width: 100%;
+  }
+}
